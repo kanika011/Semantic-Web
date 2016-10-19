@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Univ.xsl"?>
+<university name ="ASU">
+	<campus name="Tempe">
+		<department name ="Computers">
+			<student>
+				<studentName>
+				<firstname>Ali</firstname>
+				<lastname>Yousuf</lastname>
+				<ID>23232323</ID>
+				</studentName>
+				<program> Masters</program>
+				<marks>40</marks>
+			</student>
+			
+			<course>
+				<head> Dr John Stark</head>
+				<subject>
+					<professor> Ben Tylmer</professor>
+					<meeting_room> BYENG-40</meeting_room>
+					<meeting_time>09:00:00</meeting_time>
+				</subject>
+				<advisor> Jamie Cluff</advisor>
+			</course>
+			<faculty>
+				<lecturer>
+					<firstName>John</firstName>
+					<lastName>Gohntan</lastName>
+					<email>jghonton@asu.edu</email>
+					<phone>+1 (894)-789-7894</phone>
+					<designation>Asst Professor</designation>
+					<office_location>BYENG-10</office_location>
+					<research>Capstone</research>
+					<Hiring>1</Hiring>
+				</lecturer>
+			</faculty>
+		</department>
+		<department name ="Industrial">
+			<student>
+				<studentName>
+				<firstname>Mark</firstname>
+				<lastname>Schultz</lastname>
+				<ID>77878787</ID>
+				</studentName>
+				<program> Masters</program>
+				<marks>86</marks>
+			</student>
+			<course>
+				<head> Dr Abhay Sharma</head>
+				<subject>
+					<professor> Tyler Ball</professor>
+					<meeting_room> BYENG-10</meeting_room>
+					<meeting_time>10:00:00</meeting_time>
+				</subject>
+				<advisor> Any Wolsey</advisor>
+			</course>
+			<faculty>
+				<lecturer>
+					<firstName>Anne</firstName>
+					<lastName>Goodrich</lastName>
+					<email>agoodrich@asu.edu</email>
+					<phone>+1 (323)-454-7454</phone>
+					<designation>Asst Professor</designation>
+					<office_location>BYENG-30</office_location>
+					<research>Thesis</research>
+					<Hiring>1</Hiring>
+				</lecturer>
+			</faculty>
+		</department>
+		<library>Engineering</library>
+		<cafeteria>Starbucks</cafeteria>
+	</campus>
+	
+	<campus name="Polytechnic">
+		<department name ="Computers">
+			<student>
+				<studentName>
+				<firstname>Ali</firstname>
+				<lastname>Yousuf</lastname>
+				<ID>23232323</ID>
+				</studentName>
+				<program> Masters</program>
+				<marks>30</marks>
+			</student>
+			
+			<course>
+				<head> Dr John Stark</head>
+				<subject>
+					<professor> Ben Tylmer</professor>
+					<meeting_room> BYENG-40</meeting_room>
+					<meeting_time>09:00:00</meeting_time>
+				</subject>
+				<advisor> Jamie Cluff</advisor>
+			</course>
+			<faculty>
+				<lecturer>
+					<firstName>Reede</firstName>
+					<lastName>Stockton</lastName>
+					<email>rstockton@asu.edu</email>
+					<phone>+1 (894)-787-7894</phone>
+					<designation>Asst Professor</designation>
+					<office_location>BYENG-10</office_location>
+					<research>Applied Project</research>
+					<Hiring>1</Hiring>
+				</lecturer>
+			</faculty>
+		</department>
+		<department name ="Industrial">
+			<student>
+				<studentName>
+				<firstname>Ben</firstname>
+				<lastname>Simon</lastname>
+				<ID>23232323</ID>
+				</studentName>
+				<program> Masters</program>
+				<marks> 94</marks>
+			</student>
+			<course>
+				<head> Dr Abhay Sharma</head>
+				<subject>
+					<professor> Ben Tylmer</professor>
+					<meeting_room> BYENG-40</meeting_room>
+					<meeting_time>09:00:00</meeting_time>
+				</subject>
+				<advisor> Jamie Cluff</advisor>
+			</course>
+			<faculty>
+				<lecturer>
+					<firstName>Joe</firstName>
+					<lastName>Start</lastName>
+					<email>jstart@asu.edu</email>
+					<phone>+1 (894)-789-7894</phone>
+					<designation>Asst Professor</designation>
+					<office_location>BYENG-10</office_location>
+					<research>Capstone</research>
+					<Hiring>1</Hiring>
+				</lecturer>
+			</faculty>
+		</department>
+		<library>Engineering</library>
+		<cafeteria>MU</cafeteria>
+	</campus>
+	
+	<campus name="West">
+		<department name ="Computers">
+			<student>
+				<studentName>
+				<firstname>Camille</firstname>
+				<lastname>Mizzony</lastname>
+				<ID>23232323</ID>
+				</studentName>
+				<program> Masters</program>
+				<marks>30</marks>
+			</student>
+			
+			<course>
+				<head> Dr John Stark</head>
+				<subject>
+					<professor> Ben Tylmer</professor>
+					<meeting_room> BYENG-40</meeting_room>
+					<meeting_time>09:00:00</meeting_time>
+				</subject>
+				<advisor> Jamie Cluff</advisor>
+			</course>
+			<faculty>
+				<lecturer>
+					<firstName>Mike</firstName>
+					<lastName>Stevenson</lastName>
+					<email>mstevenson@asu.edu</email>
+					<phone>+1 (894)-789-7894</phone>
+					<designation>Asst Professor</designation>
+					<office_location>BYENG-10</office_location>
+					<research>Capstone</research>
+					<Hiring>1</Hiring>
+				</lecturer>
+			</faculty>
+		</department>
+		<department name ="Industrial">
+			<student>
+				<studentName>
+				<firstname>Arthur</firstname>
+				<lastname>Scott</lastname>
+				<ID>23232323</ID>
+				</studentName>
+				<program> Masters</program>
+				<marks> 94</marks>
+			</student>
+			<course>
+				<head> Dr Abhay Sharma</head>
+				<subject>
+					<professor> Ben Tylmer</professor>
+					<meeting_room> BYENG-40</meeting_room>
+					<meeting_time>09:00:00</meeting_time>
+				</subject>
+				<advisor> Jamie Cluff</advisor>
+			</course>
+			<faculty>
+				<lecturer>
+					<firstName>Steve</firstName>
+					<lastName>Atherton</lastName>
+					<email>satherton@asu.edu</email>
+					<phone>+1 (894)-789-7894</phone>
+					<designation>Asst Professor</designation>
+					<office_location>BYENG-10</office_location>
+					<research>Applied Project</research>
+					<Hiring>1</Hiring>
+				</lecturer>
+			</faculty>
+		</department>
+		<library>Engineering</library>
+		<cafeteria>MU</cafeteria>
+	</campus>
+	
+	<campus name="Downtown Phoenix">
+		<department name ="Computers">
+			<student>
+				<studentName>
+				<firstname>Shimi</firstname>
+				<lastname>Nagwanshi</lastname>
+				<ID>23232323</ID>
+				</studentName>
+				<program> Masters</program>
+				<marks>30</marks>
+			</student>
+			
+			<course>
+				<head> Dr John Stark</head>
+				<subject>
+					<professor> Ben Tylmer</professor>
+					<meeting_room> BYENG-40</meeting_room>
+					<meeting_time>09:00:00</meeting_time>
+				</subject>
+				<advisor> Jamie Cluff</advisor>
+			</course>
+			<faculty>
+				<lecturer>
+					<firstName>Anderw</firstName>
+					<lastName>Gohntan</lastName>
+					<email>aghonton@asu.edu</email>
+					<phone>+1 (894)-789-7894</phone>
+					<designation>Asst Professor</designation>
+					<office_location>BYENG-10</office_location>
+					<research>Capstone</research>
+					<Hiring>1</Hiring>
+				</lecturer>
+			</faculty>
+		</department>
+		<department name ="Industrial">
+			<student>
+				<studentName>
+				<firstname>Asiri</firstname>
+				<lastname>Yousuf</lastname>
+				<ID>23232323</ID>
+				</studentName>
+				<program> Masters</program>
+				<marks> 94</marks>
+			</student>
+			<course>
+				<head> Dr Abhay Sharma</head>
+				<subject>
+					<professor> Ben Tylmer</professor>
+					<meeting_room> BYENG-40</meeting_room>
+					<meeting_time>09:00:00</meeting_time>
+				</subject>
+				<advisor> Jamie Cluff</advisor>
+			</course>
+			<faculty>
+				<lecturer>
+					<firstName>Erin</firstName>
+					<lastName>Knoll</lastName>
+					<email>eknoll@asu.edu</email>
+					<phone>+1 (894)-789-7894</phone>
+					<designation>Asst Professor</designation>
+					<office_location>BYENG-10</office_location>
+					<research>Capstone</research>
+					<Hiring>1</Hiring>
+				</lecturer>
+			</faculty>
+		</department>
+		<library>Engineering</library>
+		<cafeteria>MU</cafeteria>
+	</campus>
+		
+</university>

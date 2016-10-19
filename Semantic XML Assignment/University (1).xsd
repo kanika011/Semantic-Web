@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="university">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref ="campus" maxOccurs="4"></xs:element>
+			</xs:sequence>
+			<xs:attribute name = "name" type ="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="campus" >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref ="department" minOccurs = "1"  maxOccurs ="2"/>	
+				<xs:element ref ="library" minOccurs ="1"/>
+				<xs:element ref = "cafeteria" minOccurs = "1"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name ="department">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref = "student" minOccurs = "1"/>
+			<xs:element ref ="course" minOccurs ="1"/>
+			<xs:element ref = "faculty" minOccurs = "1" maxOccurs="5"/> 
+		</xs:sequence>
+		<xs:attribute name ="name" type="xs:string" use ="required" />
+	</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="library" type="libType"/>
+
+		<xs:simpleType name="libType">
+  				<xs:restriction base="xs:string">
+    			<xs:enumeration value="Engineering"/>
+    			<xs:enumeration value="Arts"/>
+    			<xs:enumeration value="Music"/>
+  				</xs:restriction>
+		</xs:simpleType>
+	
+		<xs:element name="cafeteria" type="cafeType"/>
+
+		<xs:simpleType name="cafeType">
+  				<xs:restriction base="xs:string">
+    			<xs:enumeration value="MU"/>
+    			<xs:enumeration value="Subway"/>
+    			<xs:enumeration value="Starbucks"/>
+  				</xs:restriction>
+		</xs:simpleType>
+	
+	<xs:element name ="student">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name = "studentName" type ="studentNameInfo"/>
+			<xs:element name ="program" type="xs:string"/> 
+			<xs:element name="marks" type="xs:integer" />
+		</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+		
+	<xs:complexType name="NameInfo">
+  		<xs:sequence>
+    		<xs:element name="firstname" type="xs:string"/>
+    		<xs:element name="lastname" type="xs:string"/>
+  		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="studentNameInfo">
+  		<xs:complexContent>
+    		<xs:extension base="NameInfo">
+      			<xs:sequence>
+        			<xs:element name="ID" type="xs:string"/>
+      			</xs:sequence>
+    		</xs:extension>
+  		</xs:complexContent>
+	</xs:complexType>
+	
+		
+	<xs:element name ="course">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name = "head" maxOccurs = "1" type="xs:string"/><!-- Should be required -->
+			<xs:element ref ="subject" minOccurs ="1"/>
+			<xs:element name = "advisor" type="xs:string"/> 
+		</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+	
+	<xs:element name ="faculty">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref = "lecturer" minOccurs = "1" maxOccurs ="5"/>
+		</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+	
+		
+	<xs:element name ="lecturer">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name = "firstName" type = "xs:Name"/>
+			<xs:element name ="lastName" type ="xs:Name"/>
+			<xs:element name ="email" type ="xs:string"/>
+			<xs:element name ="phone" type ="xs:string"/>
+			<xs:element name = "designation" type ="xs:string"/>
+			<xs:element name ="office_location" type ="xs:string"/>
+			<xs:element ref ="research" />
+			<xs:element name ="Hiring" type="xs:boolean" />
+		</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="research" type="researchType"/>
+	
+	<xs:simpleType name="researchType">
+	  <xs:restriction base="xs:string">
+	    <xs:enumeration value="Applied Project" />
+	    <xs:enumeration value="Capstone" />
+	    <xs:enumeration value="Thesis" />
+	  </xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name ="subject">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name = "professor" type="xs:string"/>
+			<xs:element name ="meeting_room" type="xs:string"/>
+			<xs:element name ="meeting_time" type="xs:time"/>
+		</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+	
+	
+</xs:schema>
